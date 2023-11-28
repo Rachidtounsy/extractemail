@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Extractor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <label for="emailExtension">Entrez l'extension de l'email:</label>
+    <input type="text" id="emailExtension" placeholder="Entrez l'extension (par exemple, gmail.com)">
+    <br>
+    <textarea id="emailInput" rows="15" placeholder="Entrez les e-mails ici"></textarea>
+    <br>
+    <button onclick="extractEmails()">Extraire les e-mails</button>
+    <button onclick="copyResults()" id="copyButton" disabled>Copier les résultats</button>
+    <ul id="emailList"></ul>
+    <p id="errorMsg" class="error-msg"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
